@@ -6,10 +6,10 @@
 
 while ((index < 10))
 do
-	if ((index == 4))
+	if ((index == 3))
 	then
 		echo "bad luck"
-	elif ((index == 8))
+	elif ((index == 7))
 	then
 		echo "good luck"
 	else
