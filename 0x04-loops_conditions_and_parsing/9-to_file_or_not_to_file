@@ -3,7 +3,7 @@
 
 if [ -e "school" ]
 then
-	echo "shool file exists"
+	echo "school file exists"
 	if [ -s "school" ]
 	then
 		echo "school file is not empty"
