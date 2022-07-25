@@ -37,14 +37,14 @@ function start()
 function stop()
 {
 	pkill -f ./manage_my_process
-	rm -f $FILE
+	sudo rm -f $FILE
 	echo "manage_my_process stopped"
 }
 
 function restart()
 {
 	pkill -f ./manage_my_process
-	rm -f $FILE
+	sudo rm -f $FILE
 	./manage_my_process &
 	echo $$ > $FILE
 	echo "manage_my_process restarted"
