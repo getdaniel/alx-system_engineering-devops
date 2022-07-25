@@ -44,7 +44,7 @@ function stop()
 function restart()
 {
 	pkill -f ./manage_my_process
-	sudo rm $FILE
+	rm -f $FILE
 	./manage_my_process &
 	echo $$ > $FILE
 	echo "manage_my_process restarted"
