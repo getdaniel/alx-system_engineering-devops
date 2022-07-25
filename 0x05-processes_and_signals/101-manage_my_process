@@ -37,7 +37,7 @@ then
 else
     case ${1} in
     	"start")
-    	    start;;
+    	    Started;;
     	"restart")
     	    restart;;
     	"stop")
