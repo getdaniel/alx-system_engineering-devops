@@ -5,44 +5,44 @@ FILE="/var/run/my_process.pid"
 
 function error()
 {
-    echo "Usage: manage_my_process {start|stop|restart}"
+	echo "Usage: manage_my_process {start|stop|restart}"
 }
 
 function start()
 {
-    (./manage_my_process) &
-    echo $$ > $FILE
-    echo "manage_my_process started"
+	(./manage_my_process) &
+	echo $$ > $FILE
+	echo "manage_my_process started"
 }
 
 function stop()
 {
-    pkill -f ./manage_my_process
-    sudo rm $FILE
-    echo "manage_my_process stopped"
+	pkill -f ./manage_my_process
+	sudo rm $FILE
+	echo "manage_my_process stopped"
 }
 
 function restart()
 {
-    pkill -f ./manage_my_process
-    rm $FILE
-    ./manage_my_process &
-    echo $$ > $FILE
-    echo "manage_my_process restarted"
+	pkill -f ./manage_my_process
+	sudo rm $FILE
+	./manage_my_process &
+	echo $$ > $FILE
+	echo "manage_my_process restarted"
 }
 
 if [ $# -ne 1 ];
 then
-    error
+	error
 else
-    case ${1} in
-    	"start")
-    	    start;;
-    	"restart")
-    	    restart;;
-    	"stop")
-    	    stop;;
-    	*)
-    	    error;;
-    esac
+	case ${1} in
+		"start")
+			start;;
+		"restart")
+			restart;;
+		"stop")
+			stop;;
+		*)
+			error;;
+	esac
 fi
