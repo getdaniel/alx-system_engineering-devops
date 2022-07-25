@@ -36,8 +36,8 @@ then
     error
 else
     case ${1} in
-    	"start")
-    	    Started;;
+    	"Started")
+    	    start;;
     	"restart")
     	    restart;;
     	"stop")
