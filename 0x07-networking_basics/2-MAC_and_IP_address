@@ -1,3 +1,5 @@
+2
+1
 # What is a MAC address?
 #   1. The name of a network interface
 #   2. The unique identifier of a network interface
@@ -6,7 +8,4 @@
 # What is an IP address?
 #   1. Is to devices connected to a network what postal address is to houses
 #   2. The unique identifier of a network interface
-#   3. Is a number that network devices use to connect to networks
-
-2
-1
+#   3. Is a number that network devices use to connect to networks.
