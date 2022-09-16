@@ -1,3 +1,1 @@
-#!/usr/bin/bash
-# Sniffs a packet over an unencrypted connection for plaintext passwords.
-tcpdump -A port 587
+mypassword9898!
