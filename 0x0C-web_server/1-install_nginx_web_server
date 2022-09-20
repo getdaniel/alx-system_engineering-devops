@@ -5,7 +5,18 @@
 #	Returns a page containing "Holberton School" when queried
 #	at the root with a curl GET request.
 
-sudo -y apt-get update
-sudo -y apt-get install nginx-full
-echo "Hello World!" | sudo tee /usr/share/nginx/html/index.html
-sudo service nginx start
+apt-get update
+apt-get install -y nginx
+
+mkdir /etc/nginx/html
+touch /etc/nginx/html/index.html
+echo "Hello World!" > /etc/nginx/html/index.html
+printf %s "server {
+     listen      80 default_server;
+     listen      [::]:80 default_server;
+     root        /etc/nginx/html;
+     index       index.html index.htm;
+}
+" > /etc/nginx/sites-available/default
+
+service nginx restart
