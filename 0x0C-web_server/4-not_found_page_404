@@ -21,7 +21,7 @@ printf %s "server {
     root   /etc/nginx/html;
     index  index.html index.htm;
 
-    location /redirect_me {
+    location /redirect_me/ {
         return 301 Moved Permanently;
     }
 
