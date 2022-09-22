@@ -10,7 +10,7 @@ file_line { 'aaaaa':
   line   => 'rewrite ^/redirect_me https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;',
 }
 
-file { '/etc/nginx/html/index.html':
+file { '/var/www/html/index.html':
   content => 'Hello World!',
 }
 
