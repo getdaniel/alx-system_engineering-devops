@@ -1,4 +1,4 @@
-# puppet manifest creating a custom HTTP header response
+# Puppet manifest creating a custom HTTP header response
 exec { 'apt-get-update':
   command => '/usr/bin/apt-get update',
 }
@@ -24,7 +24,7 @@ file_line { 'b':
   require => Package['nginx'],
 }
 
-file { '/var/www/html/index.html':
+file { '/etc/nginx/html/index.html':
   content => 'Hello World!',
   require => Package['nginx'],
 }
