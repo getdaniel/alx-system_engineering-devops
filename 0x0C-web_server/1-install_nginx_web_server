@@ -5,8 +5,10 @@
 #	Returns a page containing "Holberton School" when queried
 #	at the root with a curl GET request.
 
-apt-get -y update
-apt-get -y install nginx
-ufw allow 'Nginx HTTP'
-echo 'Hello World!' > /var/www/html/index.nginx-debian.html
-service nginx start
+sudo apt-get -y update
+sudo apt-get install -y nginx
+sudo ufw allow 'Nginx HTTP'
+
+sudo echo "Hello World!" > /var/www/html/index.html
+
+sudo service nginx restart
