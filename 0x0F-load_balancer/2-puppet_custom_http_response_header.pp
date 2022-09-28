@@ -20,11 +20,11 @@ file_line { 'b':
   ensure  => 'present',
   path    => '/etc/nginx/sites-available/default',
   after   => 'listen 80 default_server;',
-  line    => 'add_header X-Served-By $hostname;',
+  line    => 'add_header X-Served-By $HOSTNAME;',
   require => Package['nginx'],
 }
 
-file { '/etc/nginx/html/index.html':
+file { '/var/www/html/index.html':
   content => 'Hello World!',
   require => Package['nginx'],
 }
