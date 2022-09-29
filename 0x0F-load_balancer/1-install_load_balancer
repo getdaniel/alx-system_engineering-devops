@@ -5,7 +5,7 @@ sudo apt-get install -y software-properties-common
 sudo add-apt-repository -y ppa:vbernat/haproxy-2.6
 
 sudo apt-get -y update
-sudo apt-get install haproxy=2.6.\*
+sudo apt-get -y install haproxy=2.6.\*
 
 sudo echo "ENABLED=1" >> /etc/default/haproxy
 sudo mv /etc/haproxy/haproxy.cfg{,.original}
