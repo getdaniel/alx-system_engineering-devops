@@ -2,7 +2,7 @@
 # Web servers are the piece of software generating and
 # Serving HTML pages, let’s install one!
 #	Listens on port 80.
-#	Returns a page containing "Holberton School" when queried
+#	Returns a page containing "Hello World!" when queried
 #	at the root with a curl GET request.
 
 sudo apt-get update
