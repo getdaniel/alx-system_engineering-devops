@@ -3,4 +3,4 @@
 
 rm /etc/nginx/sites_enabled/default
 ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
-sudo service nginx restart
+service nginx restart
