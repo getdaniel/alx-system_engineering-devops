@@ -13,11 +13,11 @@ sudo ufw allow 'Nginx HTTP'
 sudo chown -R "$USER:$USER" /var/www/html
 sudo chown -R "$USER:$USER" /etc/nginx/sites-available/default
 
-sudo touch /var/www/html/index.html
-echo 'Hello World!' | sudo tee /var/www/html/index.html
+touch /var/www/html/index.html
+echo 'Hello World!' > /var/www/html/index.html
 
-sudo touch /var/www/html/404.html
-echo "Ceci n'est pas une page" | sudo tee /var/www/html/404.html
+touch /var/www/html/404.html
+echo "Ceci n'est pas une page" > /var/www/html/404.html
 
 echo "server {
      listen      80 default_server;
@@ -34,6 +34,6 @@ echo "server {
       root /var/www/html;
       internal;
     }
-}" | sudo tee /etc/nginx/sites-available/default
+}" > /etc/nginx/sites-available/default
 
 sudo service nginx restart
