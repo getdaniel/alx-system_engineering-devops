@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 # Bash script with the minimum number of commands to automate your fix.
-sudo rm /etc/nginx/sites_enabled/default
-sudo ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
-sudo service nginx restart
+apt-get -y update
+apt-get -y install nginx
+ufw allow 'Nginx HTTP'
+sed -i 's/8080/80/g' /etc/nginx/sites-enabled/default
+service nginx restart
