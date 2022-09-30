@@ -10,7 +10,7 @@ sudo apt-get -y install haproxy=2.6.\*
 sudo chown -R "$USER":"$USER" /etc/default/haproxy
 sudo chown -R "$USER":"$USER" /etc/haproxy/haproxy.cfg
 
-sudo echo "ENABLED=1" > /etc/default/haproxy
+sudo sed -i "ENABLED=1" /etc/default/haproxy
 sudo mv /etc/haproxy/haproxy.cfg{,.original}
 sudo touch /etc/haproxy/haproxy.cfg
 
