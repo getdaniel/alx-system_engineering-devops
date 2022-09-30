@@ -24,4 +24,4 @@ backend www-backend
     server 14832-web-02 3.237.15.38:80 check
 " | sudo tee /etc/haproxy/haproxy.cfg
 
-sudo service haproxy restart
+sudo service haproxy start
