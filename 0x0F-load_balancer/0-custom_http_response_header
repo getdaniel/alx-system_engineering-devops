@@ -2,7 +2,7 @@
 # Configures a new Ubuntu server with a custom HTTP header response.
 # shellcheck disable=SC2154
 
-sudo apt-get update
+sudo apt-get -y update
 sudo apt-get -y install nginx
 sudo ufw allow 'Nginx HTTP'
 
