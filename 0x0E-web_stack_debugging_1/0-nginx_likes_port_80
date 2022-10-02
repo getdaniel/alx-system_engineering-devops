@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
 # Bash script with the minimum number of commands to automate your fix.
-sed -i 's/8080/80/g' /etc/nginx/sites-enabled/default
+rm /etc/nginx/sites-enabled/default
+ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
 service nginx restart
