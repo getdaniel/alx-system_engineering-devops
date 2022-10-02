@@ -5,7 +5,7 @@ sudo apt-get install -y software-properties-common
 sudo add-apt-repository -y ppa:vbernat/haproxy-2.6
 
 sudo apt-get -y update
-sudo apt-get -y install haproxy=2.6.\*
+sudo apt-get -y install haproxy
 
 sudo chown -R "$USER":"$USER" /etc/default/haproxy
 sudo chown -R "$USER":"$USER" /etc/haproxy/haproxy.cfg
@@ -32,7 +32,7 @@ defaults
    timeout server  10000
 
 frontend www-https
-    bind   *:80
+    bind   0.0.0.0:80
     option forwardfor
     default_backend www-backend
 
