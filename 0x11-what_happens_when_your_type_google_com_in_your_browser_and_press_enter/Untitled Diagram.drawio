@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-10-04T15:16:53.599Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" etag="eL0qSSWtK_UVY3bRXrTc" version="20.4.0" type="github">
+<mxfile host="app.diagrams.net" modified="2022-10-04T15:18:02.510Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" etag="tKo42va44GGAbkMosZFt" version="20.4.0" type="github">
   <diagram id="JX267tmkFyanEfetOF3x" name="Page-1">
     <mxGraphModel dx="1990" dy="1238" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -19,9 +19,6 @@
         <mxCell id="fUVvN42I4j-7IPn_Yf2B-10" value="" style="image;html=1;image=img/lib/clip_art/networking/Firewall-page1_128x128.png" parent="1" vertex="1">
           <mxGeometry x="330" y="490" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="fUVvN42I4j-7IPn_Yf2B-11" value="" style="image;html=1;image=img/lib/clip_art/computers/Server_Rack_128x128.png" parent="1" vertex="1">
-          <mxGeometry x="440" y="220" width="80" height="80" as="geometry" />
-        </mxCell>
         <mxCell id="fUVvN42I4j-7IPn_Yf2B-12" value="" style="aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image;image=img/lib/active_directory/server_farm.svg;" parent="1" vertex="1">
           <mxGeometry x="620" y="370" width="90" height="90" as="geometry" />
         </mxCell>
@@ -30,6 +27,9 @@
         </mxCell>
         <mxCell id="fUVvN42I4j-7IPn_Yf2B-14" value="" style="aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image;image=img/lib/active_directory/database_server.svg;" parent="1" vertex="1">
           <mxGeometry x="460" y="10" width="80" height="97.56" as="geometry" />
+        </mxCell>
+        <mxCell id="OCpMYhBF6vP6gSi63RK3-5" value="" style="aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image;image=img/lib/active_directory/server_farm.svg;" vertex="1" parent="1">
+          <mxGeometry x="427.5" y="180" width="125" height="125" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
