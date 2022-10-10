@@ -20,3 +20,4 @@ attack_is_the_best_defense <br>
 0x10-https_ssl <br>
 0x11-what_happens_when_your_type_google_com_in_your_browser_and_press_enter <br>
 0x13-firewall <br>
+0x12-web_stack_debugging_2 <br>
