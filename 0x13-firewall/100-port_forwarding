@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+# Firewalls can not only filter requests, they can also forward them.
