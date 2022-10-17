@@ -13,4 +13,6 @@ if __name__ == "__main__":
 
     with open("{}.csv".format(argv[1]), "w") as csvfile:
         writer = csv.writer(csvfile, quoting=csv.QUOTE_ALL)
-        [writer.writerow([argv[1], username, to.get("completed"), to.get("title")]) for to in todos]
+        [writer.writerow(
+            [argv[1], username, to.get("completed"), to.get("title")])
+            for to in todos]
