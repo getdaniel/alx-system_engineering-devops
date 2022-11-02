@@ -5,6 +5,7 @@ the top ten hot posts of a subreddit
 """
 import requests
 
+
 def sort_histogram(histogram={}):
     '''Sorts and prints the given histogram.
     '''
