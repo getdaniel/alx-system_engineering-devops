@@ -39,14 +39,8 @@ def count_words(subreddit, word_list, histogram=[], n=0, after=None):
     '''
     api_headers = {
         'Accept': 'application/json',
-        'User-Agent': ' '.join([
-            'Mozilla/5.0 (Windows NT 10.0; Win64; x64)',
-            'AppleWebKit/537.36 (KHTML, like Gecko)',
-            'Chrome/97.0.4692.71',
-            'Safari/537.36',
-            'Edg/97.0.1072.62'
-        ])
-    }
+        "User-Agent": "linux:0x16.api.advanced"
+        }
     sort = 'hot'
     limit = 30
     res = requests.get(
