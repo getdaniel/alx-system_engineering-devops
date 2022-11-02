@@ -25,3 +25,4 @@ attack_is_the_best_defense <br>
 0x15-api <br>
 0x16-api_advanced <br>
 0x17-web_stack_debugging_3 <br>
+0x18-webstack_monitoring <br>
